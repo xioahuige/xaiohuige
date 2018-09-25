@@ -45,17 +45,17 @@
 </view>
  <view class='listwhere'>
   <view class='list clearfix' wx:for="{{goodslist}}" wx:for-item="item" wx:for-index="idx">
-  <navigator url='../homepage/homepage?type=1'>
-    <view class='list_fl fl'><image src="{{item.head_img}}"></image></view>
-    <view class='list_cet fl'> 
-        <view class='name'>{{item.nick_name}}</view>  
-        <view class='zishen'>{{item.explain}}</view>
-        <view> 147个回答 · 5.4万人收听</view>
-    </view> 
-  </navigator>
-   
+    <navigator url='../homepage/homepage?type={{item.id}}'>
+      <view class='list_fl fl'><image src="{{item.head_img}}"></image></view>
+      <view class='list_cet fl'> 
+          <view class='name'>{{item.nick_name}}</view>  
+          <view class='zishen'>{{item.explain}}</view>
+          <view> {{item.answer_num}}个回答 · {{item.follow_num}}人收听</view>
+      </view> 
+    </navigator>
+    
     <view class='list_fr fr' bindtap='goon'> 
-      <button>9G币提问</button> 
+      <button>{{item.unit_price}}G币提问</button> 
     </view>
   </view> 
  </view>

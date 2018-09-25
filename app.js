@@ -20,7 +20,8 @@ App({
     updateManager.onUpdateFailed(function () {
       // 新的版本下载失败
     })
-
+    
+    
     // 先判断是否授权登录过
     // 如果登录--》if{获取用户code请求接口 保存状态} else {不做处理}
     wx.getUserInfo({
@@ -42,7 +43,10 @@ App({
                   wx.setStorageSync('head_img', res.data.datas.head_img);
                 }
               })
+              
             } else {
+              // 用户没登录 弹出弹框让用户登陆
+              
               console.log('获取用户登录态失败！' + res.errMsg)
             }
           }

@@ -30,6 +30,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 传参  分类
+    console.log(options.type);
+    
+    // 点击跳转个人页面  传递个人id
 
   },
 

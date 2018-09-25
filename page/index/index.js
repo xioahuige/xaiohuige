@@ -1,7 +1,5 @@
 // page/index/index.js
-
 var app = getApp()
-console.log(app);
 Page({
   /**
    * 页面的初始数据
@@ -20,7 +18,6 @@ Page({
       data: {
       },
       success:function(res){
-        // console.log(res.data);
         that.setData({goodslist:res.data.datas});
       }
     })

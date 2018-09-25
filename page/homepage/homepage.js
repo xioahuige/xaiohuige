@@ -1,4 +1,4 @@
-// page/homepage/homepage.js
+var app = getApp()
 Page({
 
   /**
@@ -16,7 +16,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'http://192.168.1.148/api/expert/detail',
+      data:{
+        'id':1,
+        'user_id': options.type,
+        'type': app.globalData.openid
+      },
+      success:function(res){
+        console.log(res);
+      }
+    })
   },
 
   /**

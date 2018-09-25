@@ -2,10 +2,15 @@
   
   "pages": [
     "page/index/index",    
-    "page/quiz/quiz",
-    "page/log/log",
+    "page/quiz/quiz",     
+    "page/log/log",       
     "page/list/list",
-    "page/attach/attach"
+    "page/attach/attach",
+    "page/admin/admin",
+    "page/my/my",
+    "page/auditor/auditor",
+    "page/homepage/homepage",
+    "page/edit/edit"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -26,7 +31,7 @@
         "selectedIconPath": "page/images/shouye.png"
       },
       {
-        "pagePath": "page/list/list",
+        "pagePath": "page/admin/admin",
         "text": "我的",
         "iconPath": "page/images/wo.png",
         "selectedIconPath": "page/images/wo2.png"
