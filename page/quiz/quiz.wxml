@@ -1,9 +1,32 @@
+  <view class='center'>
+    <view class="section">
+      <textarea class='texts' placeholder="请输入你的问题" auto-focus />
 
-  <view class="section">
-    <textarea class='texts' placeholder="请输入你的问题" auto-focus />
-  </view> 
-  <view class='container'>
+      <view class='money'>99元</view>
+    </view> 
+    <view class='container'  bindtap='show'>
+        <text>提问须知</text>
+    </view>
+
+    <view class='buttons'>
+        提问
+    </view>
   </view>
+  
+  <!-- 弹出层 -->
+  <view class='popup' hidden='{{none}}'>
+      <view class='pop'> 
+          <view class='put'>提问须知</view>
+          <view class='putcet'>
+          <text>出国劳务包括的人员没有统一的规定范围，只要劳务输入国需要，且劳务输出国拥有的劳力和服务都可以包括在出国劳务的行列中。</text> 
+          </view>
+          <view class='clear' bindtap='hide'>我知道了</view>
+      </view>
+     
+  </view>
+  <!-- 弹出层 -->
+
+
 
 
 

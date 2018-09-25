@@ -1,0 +1,83 @@
+ <view class='listwhere'>
+  <view class='list clearfix'>
+    <view class='list_fl fl'><image src="../images/xianggang.png"></image></view>
+    <view class='list_cet fl'> 
+        <view class='name'>韦小宝</view>  
+        <view> 147个回答 · 5.4万人收听</view>
+        <view class='tag'>美国</view>
+    </view>    
+    <view class='list_fr fr' bindtap='goon'> 
+      <button>+关注</button> 
+    </view>
+  </view> 
+ </view>
+
+ <view class='counselor'>
+    资深美国留学讲师 美国留学顾问 
+ </view>
+ <view class='plan'>
+ 个人最大的优势就是能合理的帮助学生规划留学目的并且给出专业的留学建议，打造最适合学生的留学方案。能够从宏观上把握学生的需求及院校审核要求，重点突出学生的优势亮点，合理制定学习计划。
+ </view>
+ <view class="rejoin">
+      99灰币回答
+ </view>
+ <view class='border'></view>
+
+ <!-- 他的全部回答 -->
+  <view class='total'>
+      他的全部回答
+  </view>
+  
+  <view class='means'>
+    <view class='data clearfix'>
+      <image src='../images/wo.png' class='fl'></image>
+      <view class='names fl'>
+          <view class='admin'>樱桃小丸子</view>
+          <view class='yeserday'>1天前提问</view>
+      </view>
+      <view class='money fr'>99灰币</view>
+    </view>
+  <view class='safe'>出国留学需要注意的安全问题有哪些？出国留学需要注意的安全问题有哪些？出国留学需要注意的安全问题有哪些？谢谢！</view>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+  <view class='shenhua clearfix'>
+    <view class='reply fl'>1天前回答</view>
+    <view class='zan fr'>
+      <image src='../images/zan.png'></image>
+      <text>588</text>
+    </view>
+    <view class='ting fr'>
+      <image src='../images/ting.png'></image>
+      <text>1309</text>
+    </view>
+  </view>
+  </view>
+
+   <view class='means'>
+    <view class='data clearfix'>
+      <image src='../images/wo.png' class='fl'></image>
+      <view class='names fl'>
+          <view class='admin'>樱桃小丸子</view>
+          <view class='yeserday'>1天前提问</view>
+      </view>
+      <view class='money fr'>99灰币</view>
+    </view>
+  <view class='safe'>出国留学需要注意的安全问题有哪些？出国留学需要注意的安全问题有哪些？出国留学需要注意的安全问题有哪些？谢谢！</view>
+  <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+  <view class='shenhua clearfix'>
+    <view class='reply fl'>1天前回答</view>
+    <view class='zan fr'>
+      <image src='../images/zan.png'></image>
+      <text>588</text>
+    </view>
+    <view class='ting fr'>
+      <image src='../images/ting.png'></image>
+      <text>1309</text>
+    </view>
+  
+  </view>
+  
+  </view>
+<!-- 他的全部回答 -->
+ 
+
+  

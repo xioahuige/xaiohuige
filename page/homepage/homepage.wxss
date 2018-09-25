@@ -1,0 +1,35 @@
+/* page/homepage/homepage.wxss */
+.list{width:96%;margin:60rpx auto auto auto;}
+.list_fl{margin-right:20rpx;}
+.list_fl image{width:126rpx;height:126rpx;}
+.list_cet{font-size: 24rpx;color: #999999}
+.name{margin-bottom:6rpx;font-size: 36rpx;color: #333;font-weight:bold;}
+.zishen{margin-bottom: 6rpx;}
+.list_fr button{color:#3483FD;font-size: 24rpx;width:160rpx;height:60rpx;background:rgba(225,236,255,1);border-radius:30rpx;line-height:60rpx;}
+.list_fr{margin-top:20rpx;}
+.listwhere{margin-bottom:40rpx;}  
+.tag{margin-top:10rpx;width:112rpx;height:36rpx;background:rgba(247,247,247,1);border-radius:18rpx;line-height:36rpx;color: #333;text-align: center;}
+.counselor{font-size:28rpx;color:#999;margin: 0 28rpx;line-height:40rpx;}
+.plan{font-size:28rpx;color:#999;margin:0 28rpx;line-height:40rpx;}
+.rejoin{width:630rpx;height:88rpx;background:rgba(225,236,255,1);text-align: center;color:#3483FD;line-height:88rpx;font-size: 36rpx;margin: 28rpx auto 60rpx auto;}
+.border{width:750rpx;height:1rpx;background:rgba(217,217,217,1);}
+.total{font-size: 36rpx;font-weight: bold;margin: 60rpx 0 12rpx 28rpx;}
+.data{width:100%;margin:48rpx auto 28rpx auto;}
+.means{width:96%;margin: 0 auto;border-bottom:1px solid #D9D9D9;padding-bottom:46rpx;}
+.data image{margin-left:16rpx;width:60rpx;height:60rpx;background:rgba(247,247,247,1);border:1px solid rgba(217,217,217,1);border-radius:30rpx;}
+.admin{font-size:28rpx;color: #666;}
+.names{margin-left:20rpx;}
+.yeserday{font-size:22rpx;color: #b3b3b3;}
+.safe{font-size: 32rpx;color:#333;}
+.money{font-size:32rpx;color: #3483FD;}
+.reply{font-size: 24rpx;color: #999;margin-top:14rpx;}
+.zan{margin-left:40rpx;}
+.zan image{width:31rpx;height:28rpx;display: inline-block}
+.zan text{font-size:24rpx;color: #999;}
+.ting text{font-size:24rpx;color: #999;}
+.ting image{width:31rpx;height:28rpx;display: inline-block}
+.safe{font-size: 32rpx;line-height:46rpx;margin-bottom: 46rpx;}
+.shenhua{margin-top:40rpx;}
+
+
+

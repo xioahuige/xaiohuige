@@ -1,0 +1,17 @@
+/* page/edit/edit.wxss */
+.borders{width:100%;height:20rpx;background: #f6f6f6;}
+.header{width:90%;margin:0 auto;}
+.head{height:148rpx;line-height:148rpx;border-bottom:2rpx solid #efefef;}
+.head text{font-size: 32rpx;color:#9E9E9E;}
+.head image{width:106rpx;height:106rpx;margin-top:24rpx;}
+.names{height:128rpx;border-bottom:2rpx solid #efefef;}
+.names text{font-size:32rpx;color: #9E9E9E;margin-top:40rpx;display: block}
+.names input{font-size:32rpx;}
+.name{border-bottom:2rpx solid #efefef;}
+.name text{font-size:28rpx;color: #9E9E9E;margin-top:20rpx;display: block}
+.name textarea{font-size:28rpx;height:90rpx;color: #9E9E9E;margin-top: 10rpx;}
+.quiert{font-size: 32rpx;color: #4a4a4a;margin-top:46rpx;}
+.quaefr{width:150rpx;height:52rpx;background:rgba(246,246,246,1);position: relative;margin-top:42rpx;}
+.quaefr input{display: inline-block;margin-left:20rpx;color: #3483FD;}
+.quaefr text{position: absolute;top: 0;right: 10rpx;}
+.keep{width:180rpx;height:60rpx;background:rgba(52,131,253,1);border-radius:30rpx;text-align: center;color: #fff;margin: 40rpx auto;line-height: 60rpx;}

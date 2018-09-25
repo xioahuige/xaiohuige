@@ -5,10 +5,10 @@
 .disable{width:94%;margin:20rpx auto;border-bottom:1px solid #D8D8D8;padding-bottom: 10rpx;}
 swiper{height:100px;} 
 .tabbtm{background:#fff;position: fixed;bottom:0px;left: 0px;width:100%;height:98rpx;box-shadow:0px -1px 0px 0px rgba(217,217,217,0.5)}
-.tabfl{width:50%;text-align: center;line-height:98rpx;font-size: 28rpx;vertical-align:middle;}
+.tabfl{width:50%;text-align:center;line-height:98rpx;font-size: 28rpx;vertical-align:middle;}
 .tabfl image{width:33rpx;height:36rpx;vertical-align:middle;margin-right: 10rpx;}
-.tabfl text{vertical-align: middle}
-.tabfr text{vertical-align: middle}
+.tabfl text{vertical-align:middle;}
+.tabfr text{vertical-align:middle;}
 .tabfr image{width:33rpx;height:36rpx;vertical-align:middle;margin-right:10rpx;}
 .tabfr{width:50%;text-align: center;line-height:98rpx;font-size: 28rpx;vertical-align:middle;}
 .indicator-active-color{width:20px;height:40px;}
@@ -18,11 +18,10 @@ swiper{height:100px;}
 .list{width:96%;margin:60rpx auto auto auto;}
 .list_fl{margin-right:20rpx;}
 .list_fl image{width:126rpx;height:126rpx;}
-.list_cet{font-size: 24rpx;color: #999999}
+.list_cet{font-size: 24rpx;color: #999999;}
 .name{margin-bottom:6rpx;font-size: 36rpx;color: #333;font-weight:bold;}
 .zishen{margin-bottom: 6rpx;}
-.list_fr button{color:#3483FD;font-size: 24rpx;width:160rpx;height:60rpx;background:rgba(225,236,255,1);border-radius:30rpx;line-height:60rpx;}
+.list_fr button{color:#3483FD;font-size: 24rpx;width:160rpx;height:60rpx;background:rgba(225,236,255,1);border-radius:30rpx; line-height:60rpx;}
 .list_fr{margin-top:20rpx;}
-.listwhere{margin-bottom:90rpx;}  
 .skye{display: inline-block;margin-left:40rpx;}
 .state{text-align:center;font-size: 24rpx;}

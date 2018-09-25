@@ -55,21 +55,21 @@ Page({
    * 热门搜索数据渲染加载 
    */
   onLoad: function () {
-    var that = this;
-    wx.request({
-      //上线接口地址要是https测试可以使用http接口方式
-      url: '',
-      data: {},
-      method: 'GET',
-      header: {
-        'content-type': 'application/json'
-      },
-      success: function (res) {
-        that.setData({ goodslist: res.data.data.senior_zou });
-        console.log(res.data.data, 1111111);
-      },
+    // var that = this;
+    // wx.request({
+    //   //上线接口地址要是https测试可以使用http接口方式
+    //   url: '',
+    //   data: {},
+    //   method: 'GET',
+    //   header: {
+    //     'content-type': 'application/json'
+    //   },
+    //   success: function (res) {
+    //     that.setData({ goodslist: res.data.data.senior_zou });
+    //     console.log(res.data.data, 1111111);
+    //   },
 
-    })
+    // })
   },
 
   /**
@@ -132,9 +132,12 @@ Page({
     })
   },
 
-  history:function(){
+  historys:function(){
+    
     wx.navigateTo({
-      url: '../index/index'
+      url: '../index/index',
+
     })
+    console.log(111);
   }
 })

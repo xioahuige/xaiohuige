@@ -1,0 +1,105 @@
+
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">已解答</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">未解答</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">被拒绝</view>
+  </scroll-view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block>
+        <view class='border'>
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">詹姆斯哈登</view>
+              <view class="tag">1小时前提问</view>
+            </view>
+            <view class="askBtn">99元</view>
+          </view>
+          <view class='know'>您好，请问北京和上海哪个地区更适合居住，哪个地方的教育更适合孩子的发展</view>
+
+          <view class='me'>
+            <image src='http://ookzqad11.bkt.clouddn.com/avatar.png'></image>
+          </view>
+          <view class='shenhua clearfix'>
+            <view class='reply fl'>9-11</view>
+            <view class='zan fr'>
+              <image src='../images/zan.png'></image>
+              <text>588</text>
+            </view>
+            <view class='ting fr'>
+              <image src='../images/ting.png'></image>
+              <text>1309</text>
+            </view>
+          </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block>
+        <view class='border'>
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">詹姆斯哈登1</view>
+              <view class="tag">1小时前提问</view>
+            </view>
+            <view class="askBtn">99元</view>
+          </view>
+          <view class='know'>您好，请问北京和上海哪个地区更适合居住，哪个地方的教育更适合孩子的发展</view>
+
+            <view class='option'>
+                <button class='answer'>解答</button>
+                <button class='refuse'>拒绝</button>
+            </view>
+           </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block>
+        <view class='border'>
+          <view class="item-ans">
+            <view class="avatar">
+              <image class="img" src="http://ookzqad11.bkt.clouddn.com/avatar.png"></image>
+            </view>
+            <view class="expertInfo">
+              <view class="name">詹姆斯哈登3</view>
+              <view class="tag">1小时前提问</view>
+            </view>
+            <view class="askBtn">99元</view>
+          </view>
+          <view class='know'>您好，请问北京和上海哪个地区更适合居住，哪个地方的教育更适合孩子的发展</view>
+
+          <view class='me'>
+            <image src='http://ookzqad11.bkt.clouddn.com/avatar.png'></image>
+          </view>
+          <view class='shenhua clearfix'>
+            <view class='reply fl'>9-11</view>
+            <view class='zan fr'>
+              <image src='../images/zan.png'></image>
+              <text>588</text>
+            </view>
+            <view class='ting fr'>
+              <image src='../images/ting.png'></image>
+              <text>1309</text>
+            </view>
+          </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+</view>

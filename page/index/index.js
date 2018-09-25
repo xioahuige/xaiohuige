@@ -1,7 +1,7 @@
 // page/index/index.js
 
 var app = getApp()
-// console.log(app);
+console.log(app);
 Page({
   /**
    * 页面的初始数据
@@ -15,12 +15,12 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    // var host = getApp().globalData.host + '/api/index/index';
     wx.request({
-      url: app.globalData.host + '/api/index/index', //仅为示例，并非真实的接口地址
+      url: getApp().globalData.host + '/api/index/index', 
       data: {
       },
       success:function(res){
+        // console.log(res.data);
         that.setData({goodslist:res.data.datas});
       }
     })
@@ -78,6 +78,16 @@ Page({
   bindViewTap: function () {
     wx.navigateTo({
       url: '../log/log'
+    })
+  },
+  goon:function(){
+    wx.navigateTo({
+      url: '../quiz/quiz'
+    })
+  },
+  index:function(){
+    wx.navigateTo({
+      url: '../index/index'
     })
   },
 

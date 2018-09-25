@@ -1,11 +1,11 @@
-// page/quiz/quiz.js
+// page/edit/edit.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      none:true
+
   },
 
   /**
@@ -62,14 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  
-  show:function(){
-    var that = this;
-    that.setData({ 'none': false });
-  },
-  hide:function(){
-    var that = this;
-    that.setData({ 'none': true });
-  },
+  }
 })

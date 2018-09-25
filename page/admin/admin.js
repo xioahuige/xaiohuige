@@ -1,20 +1,17 @@
-// page/quiz/quiz.js
+// page/admin/admin.js
 Page({
-
   /**
    * 页面的初始数据
    */
-  data: {
-      none:true
-  },
+  data: { 
 
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
 
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -28,7 +25,6 @@ Page({
   onShow: function () {
 
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */
@@ -54,7 +50,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+    console.info(111);
   },
 
   /**
@@ -63,13 +59,21 @@ Page({
   onShareAppMessage: function () {
 
   },
-  
-  show:function(){
-    var that = this;
-    that.setData({ 'none': false });
+  history:function(){
+    wx.navigateTo({
+      url: '../edit/edit'
+    })
   },
-  hide:function(){
-    var that = this;
-    that.setData({ 'none': true });
+
+  question:function(){
+    wx.navigateTo({
+      url: '../list/list'
+    })
+  },
+
+  answer: function () {
+    wx.navigateTo({
+      url: '',
+    })
   },
 })

@@ -1,0 +1,18 @@
+.avatar .doyen{width:40rpx;height:40rpx;position:absolute;bottom:-2px;right:20rpx;}
+.item-ans{display:flex;}
+.expertInfo{font-size: 12px;flex-grow: 2;color: #B0B0B0;line-height:1.5em;margin-left:20rpx;}
+.expertInfo .name{font-size:28rpx;color:#666;}
+.askBtn{text-align: center;font-size: 14px; color:#4675F9;}
+.scoll-h{height: 100%;margin-top: 30rpx;}
+.avatar image{width:60rpx;height:60rpx;}
+.me image{width:60rpx;height:60rpx;}
+.tag{font-size:22rpx;}
+.know{font-size:32rpx;margin: 10rpx auto 40rpx auto;line-height:50rpx;font-weight:bold;}
+.reply{font-size: 28rpx;color: #9c9c9c;margin-top: 10rpx;}
+.zan{margin-left: 40rpx;}
+.zan image{width:31rpx;height:28rpx;display: inline-block;margin-right:6rpx;}
+.zan text{font-size:24rpx;color: #999;}
+.shenhua{width:100%;margin:45rpx auto auto auto;padding-bottom:48rpx;}
+.ting text{font-size:24rpx;color: #999;}
+.ting image{width:31rpx;height:28rpx;display: inline-block;margin-right:6rpx;}
+.border{border-bottom:2rpx solid #EDEDED;width:90%;margin: 0 auto;}
