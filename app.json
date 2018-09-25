@@ -1,0 +1,36 @@
+{
+  
+  "pages": [
+    "page/index/index",    
+    "page/quiz/quiz",
+    "page/log/log",
+    "page/list/list",
+    "page/attach/attach"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "borderStyle": "#000",
+    "selectedColor": "#9999FF",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "text": "首页",
+        "iconPath": "page/images/shouye2.png",
+        "selectedIconPath": "page/images/shouye.png"
+      },
+      {
+        "pagePath": "page/list/list",
+        "text": "我的",
+        "iconPath": "page/images/wo.png",
+        "selectedIconPath": "page/images/wo2.png"
+      }
+    ]
+  }
+}

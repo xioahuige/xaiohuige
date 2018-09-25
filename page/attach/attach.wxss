@@ -1,0 +1,9 @@
+/* page/attach/attach.wxss */
+.list{width:96%;margin:60rpx auto auto auto;}
+.list_fl{margin-right:20rpx;}
+.list_fl image{width:126rpx;height:126rpx;}
+.list_cet{font-size: 24rpx;color: #999999;}
+.name{margin-bottom:6rpx;font-size: 36rpx;color: #333;font-weight:bold;}
+.zishen{margin-bottom: 6rpx;}
+.list_fr{margin-top:20rpx;}
+.list_fr button{color:#3483FD;font-size: 24rpx;width:160rpx;height:60rpx;background:rgba(225,236,255,1);border-radius:30rpx;line-height:60rpx;} 

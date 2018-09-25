@@ -1,0 +1,34 @@
+<view class='container'>
+  <view class='search'>
+    <icon type='search' size='16' class='magnifier'></icon>
+    <input placeholder='搜索感兴趣的人和内容' auto-focus bindinput="bindInput" bindchange="bindchange" value="{{inputValue}}"></input>
+    <icon type='clear' size='16' class='clear' bindtap='clearInput' hidden="{{nones}}"></icon>
+    <view class='cast' bindtap='history'>取消</view>
+  </view>
+  <!--历史搜索  热门搜索-->
+  <!-- <view class='searchs'>
+    <view class='history'>
+      <view class='great'>热门搜索</view>
+      <view class='substance clearfix'>
+        <view wx:for="{{goodslist}}" wx:for-item="item" wx:for-index="idx">
+          <navigator class='container' url='../details/details?id={{item.id}}&school_name={{item.school_name}}'>
+            <text>{{item.school_name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <!--历史搜索  热门搜索-->
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+  <!--input搜索提示框  -->
+  <view class='rubbit'  hidden='{{none}}'>
+    <view class='inputer' wx:for="{{goods}}" wx:for-item="item" wx:for-index="idx">
+      <navigator class='container' url='../details/details?id={{item.id}}&school_name={{item.school_name}}'>
+        <view class='input_li'>{{item.school_name}}</view>
+      </navigator>
+    </view> 
+  </view>
+   <!--input搜索提示框  -->
+</view>

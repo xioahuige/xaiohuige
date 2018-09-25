@@ -1,0 +1,13 @@
+<view class='listwhere'>
+  <view class='list clearfix'>
+    <view class='list_fl fl'><image src="../images/xianggang.png"></image></view>
+    <view class='list_cet fl'> 
+        <view class='name'>1222</view>  
+        <view class='zishen'>333</view>
+        <view> 147个回答 · 5.4万人收听</view>
+    </view> 
+    <view class='list_fr fr'> 
+      <button>9G币提问</button> 
+    </view>
+  </view> 
+ </view>

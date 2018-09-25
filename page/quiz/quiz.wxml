@@ -1,0 +1,9 @@
+
+  <view class="section">
+    <textarea class='texts' placeholder="请输入你的问题" auto-focus />
+  </view> 
+  <view class='container'>
+  </view>
+
+
+

@@ -1,0 +1,14 @@
+<!-- 展示页面 -->
+<!-- 用户点击之后开始获取用户信息 -->
+<!-- 获取到用户信息后301跳转到上一个页面 -->
+
+<view class="userinfo">
+    <!-- <image
+        class="userinfo-avatar"
+        src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+        background-size="cover"
+    ></image> -->
+    <view>
+        <button class="userinfo-nickname"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击获取用户基本信息</button>
+    </view>
+</view>

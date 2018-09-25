@@ -1,0 +1,3 @@
+/* page/quiz/quiz.wxss */
+.container{width:100%;}
+.texts{width:100%;height:450rpx;background: #fff;font-size: 32rpx;color: #999;text-indent:10rpx;}

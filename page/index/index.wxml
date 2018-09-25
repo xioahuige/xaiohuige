@@ -1,0 +1,78 @@
+<view class='form'>
+  <image src='../images/sousuo.png' bindtap='bindViewTap'></image>
+</view>
+
+<view class='disable'>
+  <swiper interval="3000" display-multiple-items="1"  class='swipers' indicator-dots="true" indicator-color="rgba(0, 0, 0, .2)" indicator-active-color="#3483FD">
+    <swiper-item>
+      <navigator class='skye' url='../attach/attach?type=1'>
+          <image src="../images/meiguo.png" class="slide-image" width="48" height="48" />
+          <view class='state'>美国</view>
+      </navigator> 
+      <navigator class='skye' url='../attach/attach?type=2'>
+          <image src="../images/jiadada.png" class="slide-image" width="48" height="48" />
+          <view class='state'>加拿大</view>
+      </navigator>
+      <navigator class='skye' url='../attach/attach?type=3'>
+          <image src="../images/yingguo.png" class="slide-image" width="48" height="48" />
+          <view class='state'>英国</view>
+      </navigator>
+      <navigator class='skye' url='../attach/attach?type=4'>
+            <image src="../images/aoxin.png" class="slide-image" width="48" height="48" />
+            <view class='state'>澳新</view>
+      </navigator>
+      <navigator class='skye' url='../attach/attach?type=5'>
+            <image src="../images/yazhou.png" class="slide-image" width="48" height="48" />
+            <view class='state'>亚洲</view>
+      </navigator>
+    </swiper-item>    
+    <swiper-item>
+      <navigator class='skye' url='../attach/attach?type=6'>
+          <image src="../images/oumeng.png" class="slide-image" width="48" height="48" />
+          <view class='state'>欧盟</view>
+      </navigator>
+      <navigator class='skye' url='../attach/attach?type=7'>
+          <image src="../images/xianggang.png" class="slide-image" width="48" height="48" />
+          <view class='state'>香港</view>
+      </navigator>
+    </swiper-item>  
+  </swiper> 
+</view> 
+<!-- 热门专家 -->
+<view class='mavin clearfix'> 
+  <view class='hot fl'>热门专家</view>
+  <view class='know fr'>查看全部 ></view>
+</view>
+ <view class='listwhere'>
+  <view class='list clearfix' wx:for="{{goodslist}}" wx:for-item="item" wx:for-index="idx">
+    <view class='list_fl fl'><image src="{{item.head_img}}"></image></view>
+    <view class='list_cet fl'> 
+        <view class='name'>{{item.nick_name}}</view>  
+        <view class='zishen'>{{item.explain}}</view>
+        <view> 147个回答 · 5.4万人收听</view>
+    </view> 
+    <view class='list_fr fr'> 
+      <button>9G币提问</button> 
+    </view>
+  </view> 
+ </view>
+<!-- 热门专家 -->
+
+<!-- 底部切换tab -->
+<view class='tabbtm clearfix'>
+    <view class='tabfl fl'>
+     <image src='../images/shouye.png'></image>
+      <text>首页</text>  
+    </view>
+    <view class='tabfr fl'>
+    <image src='../images/wo.png'></image>
+      <text>我的</text>  
+    </view>
+</view> 
+<!-- 底部切换tab -->
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<!-- <open-data type="userNickName"></open-data> -->
+<!-- 需要使用 button 来授权登录 -->
+<!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
+<!-- <view wx:else>请升级微信版本</view> -->
