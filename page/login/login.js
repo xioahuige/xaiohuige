@@ -31,6 +31,7 @@ Page({
                   wx.setStorageSync('nick_name', e.detail.userInfo.nickName);
                   wx.setStorageSync('head_img', e.detail.userInfo.avatarUrl);
                   wx.setStorageSync('openid', res.data.datas.openid);
+                  wx.setStorageSync('state', res.data.datas.state);
                   // 在此请求
                   wx.request({
                     url: app.globalData.host + res.data.datas.url,
@@ -51,6 +52,7 @@ Page({
               } else if (res.data.code == 2){
                 wx.setStorageSync('nick_name', res.data.datas.nick_name);
                 wx.setStorageSync('head_img', res.data.datas.head_img);
+                wx.setStorageSync('state', res.data.datas.state);
                 wx.setStorageSync('openid', res.data.datas.openid);
               }
              

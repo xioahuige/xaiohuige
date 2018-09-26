@@ -1,16 +1,19 @@
-// page/admin/admin.js
+//是否登录
+var app = getApp();
+
 Page({
   /**
    * 页面的初始数据
    */
   data: { 
-
+    state: app.globalData.state
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

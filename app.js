@@ -41,6 +41,7 @@ App({
                   wx.setStorageSync('openid', res.data.datas.openid);
                   wx.setStorageSync('nick_name', res.data.datas.nick_name);
                   wx.setStorageSync('head_img', res.data.datas.head_img);
+                  wx.setStorageSync('state', res.data.datas.state);
                 }
               })
               
