@@ -1,18 +1,34 @@
-// page/edit/edit.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    nick_name : wx.getStorageSync('nick_name'),
+    head_img : wx.getStorageSync('head_img'),
+    state : wx.setStorageSync('state'),
+    host: app.globalData.host
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this;
+    wx:request({
+      url: '',
+      data: {
+        openid: wx.getStorageSync('openid')
+      },
+      method: 'GET',
+      success: function(res) {
+        that.setData({
+          sex:'男',
+          dizhi: '北京市'
+        })
+      }
+    })
   },
 
   /**

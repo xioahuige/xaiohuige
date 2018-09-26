@@ -1,4 +1,4 @@
-// page/quiz/quiz.js
+
 Page({
 
   /**

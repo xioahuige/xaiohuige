@@ -1,4 +1,4 @@
-// page/attach/attach.js
+// 个人主页
 Page({
 
   /**

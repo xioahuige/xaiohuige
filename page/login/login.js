@@ -27,11 +27,7 @@ Page({
               console.log(res);
               // 新用户
               if (res.data.code == 3){
-                  // 保存用户信息
-                  wx.setStorageSync('nick_name', e.detail.userInfo.nickName);
-                  wx.setStorageSync('head_img', e.detail.userInfo.avatarUrl);
-                  wx.setStorageSync('openid', res.data.datas.openid);
-                  wx.setStorageSync('state', res.data.datas.state);
+                  
                   // 在此请求
                   wx.request({
                     url: app.globalData.host + res.data.datas.url,
@@ -45,7 +41,11 @@ Page({
                       'content-type': 'application/json'
                     },
                     success:function(res1){
-                      console.log(res1);
+                      // 保存用户信息
+                      wx.setStorageSync('nick_name', res1.data.datas.nick_name);
+                      wx.setStorageSync('head_img', res1.data.datas.head_img);
+                      wx.setStorageSync('openid', res1.data.datas.openid);
+                      wx.setStorageSync('state', res1.data.datas.state);
                     }
                   })
               // 老用户
