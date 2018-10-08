@@ -27,6 +27,7 @@ App({
     wx.getUserInfo({
       // 授权过的用户
       success: res_user_information => {
+        // console.log(res_user_information);
         // ----------------------------------------------------------------------------------------------------------------------
         wx.login({
           success: function (res_user_code) {

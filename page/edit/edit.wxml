@@ -1,37 +1,48 @@
 <view class='borders'></view>
 
 <view class='header'>
-  <view class='head clearfix'>
+  <view class='head clearfix' >
     <text class='fl'>头像</text>
     <image src='{{host}}{{head_img}}' class='fr'></image>
   </view>
 
   <view class='names'> 
-    <text>昵称（30天内只能修改一次）</text>
-    <input value='我的微信名字'></input>
+    <text>昵称</text>
+    <input value='{{nick_name}}'></input>
   </view>
 
    <view class='names'> 
     <text>性别</text>
-    <input value='男'></input>
+    <view wx:for="{{gender_arr}}">
+      <view wx:if="{{gender_arr.id == gender}}">
+        <radio  value="{{gender_arr.id}}" checked="true"/>{{gender_arr.name}}
+      </view>
+      <view wx:else>
+        <radio  value="{{gender_arr.id}}" checked=""/>{{gender_arr.name}}
+      </view>
+    </view>
+    
+    <!-- <input wx:if="{{gender==1}}" value='男'></input>
+    <input wx:if="{{gender==2}}" value='女'></input>
+    <input wx:if="{{gender==0}}" value='未知'></input> -->
   </view>
    <view class='names'> 
     <text>添加居住信息</text>
-    <input value='未添加'></input>
+    <input value='{{address}}'></input>
   </view>
-   <view wx:if="{{state==2}}" class='name'> 
+   <view wx:if="{{state==2}}" class='name'>
     <text>头衔</text>
-    <textarea placeholder='请输入你的职业，如留学咨询师，留学规划师，留学顾问 师哥师姐···'></textarea>
+    <textarea placeholder='请输入你的职业，如留学咨询师，留学规划师，留学顾问 师哥师姐···' value='{{introduction}}'></textarea>
   </view>
    <view wx:if="{{state==2}}" class='name'> 
     <text>擅长问题</text> 
-    <textarea placeholder='描述一下你的专业技能，让大家更好的了解你'></textarea>
+    <textarea placeholder='描述一下你的专业技能，让大家更好的了解你' value='{{explain}}'></textarea>
   </view>
 
   <view wx:if="{{state==2}}" class='quiz clearfix'>
     <view class='quiert fl'>向我提问需要支付</view>
     <view class='quaefr fr'>
-      <input value='16'></input><text>元</text>
+      <input value='{{unit_price}}'></input><text>元</text>
     </view>
   </view>
 

@@ -16,15 +16,24 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
-    wx:request({
-      url: '',
+    wx.request({
+      url: 'http://192.168.1.148/api/info/detail',
       data: {
         openid: wx.getStorageSync('openid')
       },
       method: 'GET',
       success: function(res) {
         that.setData({
-          sex:'男',
+          gender_arr: [
+            { name: '男' , id:1},
+            { name: '女',  id:2},
+            { name: '未知',id:0}
+          ],
+          gender: res.data.datas.gender,
+          address: res.data.datas.address,
+          unit_price: res.data.datas.unit_price,
+          introduction: res.data.datas.introduction,
+          explain: res.data.datas. explain,
           dizhi: '北京市'
         })
       }
